@@ -1,0 +1,51 @@
+@font-face {
+  /* Font used for demo purposes, proper licence required for commercial use: https://www.hanodedfonts.com/ */
+  font-family: 'DK-Crayon-Crumble';
+  src: local('DK-Crayon-Crumble'), url(../fonts/DkCrayonCrumble-ddll.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  color: white;
+  letter-spacing: 2px;
+  font-family: 'DK-Crayon-Crumble', sans-serif;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-areas: 
+              "... header    ..."
+              "... game-grid ..."
+              "... footer    ...";
+  gap: 32px 8px;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+.container-grid > header {
+  grid-area: header;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  grid-area: game-grid;
+}
+
+.container-grid > footer{
+  grid-area: footer;
+}
+
+.reset-button {
+  float: right;
+  padding: 1rem;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: x-large;
+  letter-spacing: inherit;
+  font-family: inherit;
+}

@@ -1,0 +1,43 @@
+.game-square {
+    padding: 5px;
+    font-size: 120px;
+    text-align: center;
+    border: 1px #eeeeee solid;
+}
+
+/* Removing the extra borders to make it look more like a traditional tic-tac-toe board */
+.game-grid > .game-square:first-child {
+    border-left: none;
+    border-top: none;
+}
+
+.game-grid > .game-square:nth-child(2) {
+    border-top: none;
+}
+
+.game-grid > .game-square:nth-child(3) {
+    border-top: none;
+    border-right: none;
+}
+
+.game-grid > .game-square:nth-child(4) {
+    border-left: none;
+}
+
+.game-grid > .game-square:nth-child(6) {
+    border-right: none;
+}
+
+.game-grid > .game-square:nth-child(7) {
+    border-left: none;
+    border-bottom: none;
+}
+
+.game-grid > .game-square:nth-child(8) {
+    border-bottom: none;
+}
+
+.game-grid > .game-square:nth-child(9) {
+    border-right: none;
+    border-bottom: none;
+}
